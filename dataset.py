@@ -6,6 +6,9 @@ alg="haarcascade_frontalface_default.xml"
 
 # directories
 dataset="Datasets"
+
+# creating the directory for the datasets (facial images)
+os.mkdir(dataset)
 person=input("Enter the name of the person:")
 
 # joining the variables to make the path for the dataset
