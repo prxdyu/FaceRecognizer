@@ -4,11 +4,11 @@ import cv2,imutils,time,os
 # importing the haarcascade algorithm
 alg="haarcascade_frontalface_default.xml"
 
-# directories
+# creating the Dataset directory if its not present
 dataset="Datasets"
+if not os.path.isdir(dataset):
+    os.mkdir(dataset)
 
-# creating the directory for the datasets (facial images)
-os.mkdir(dataset)
 person=input("Enter the name of the person:")
 
 # joining the variables to make the path for the dataset
